@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlecon"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/header_bg">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:onClick="back"
+            android:src="@drawable/back_button_xml" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="1.0dip"
+            android:layout_toRightOf="@id/backButton"
+            android:background="@drawable/seprator" />
+
+        <TextView
+            android:id="@+id/top_main_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65.0dip"
+            android:layout_marginRight="65.0dip"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_below="@+id/titlecon"
+        android:background="@drawable/search_bar_bg" >
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/search_button_xml"
+            android:contentDescription="@string/app_name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/searchText"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/searchBtn"
+            android:background="@drawable/search_input_bg"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="-2.0dip"
+            android:hint="@string/searchhint"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="32.0dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:focusableInTouchMode="true"
+            android:textColorHint="#ffcccccc" />
+
+        <ImageButton
+            android:id="@+id/searchClearBtn"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignRight="@+id/searchText"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/clear_botton_xml"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/white"
+        android:fadingEdge="none" />
+
+</LinearLayout>

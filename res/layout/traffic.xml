@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+     <include
+            android:id="@+id/title_bar"
+            layout="@layout/newhead" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:minHeight="?android:listPreferredItemHeight"
+            android:orientation="vertical"
+            android:paddingBottom="3.0dip"
+            android:paddingTop="3.0dip" >
+
+            <TextView
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip"
+                android:text="  出入境交通\n
+
+航空\n
+
+巴西目前尚未直接与中国通航。中国游客赴巴西旅行可选择欧、亚或经美国等航线转飞。其中经亚洲航
+
+线飞往巴西可乘日本的JAL航空公司和韩国的KE航空公司的飞机，或其它航空公司的飞机分别经日本东京
+
+和韩国汉城转飞经美国洛杉矶再飞抵巴西。\n
+
+经欧洲航线飞往巴西可分别乘德、法、英、荷等国的航空公司的飞机经上述国家转飞抵巴西。如不考虑
+
+签证的问题也可经美、加直接转飞抵巴西，这样会更加缩短飞行时间。\n
+
+巴西同中南美周边国家均有通航，但并不是每日都有航班。特别提醒在出行前一定要排好行程航线。\n
+
+境内交通\n
+
+航空\n
+
+巴西国内主要有四家大型民用航空公司。巴西的民用机场共有62个，其中国际机场有22个。一般外国旅
+
+行者出入巴西的主要国际空港为圣保罗的瓜鲁里奥斯机场和里约热内卢的格莱昂机场。一般的旅游城市
+
+也都有国际性的机场。\n
+
+铁路\n
+
+巴西的铁路运输主要以货运为主。 除了在市区通勤的人会常挤火车之外，巴西的火车并非主要的交通工
+
+具。然而安排一部分火车旅行很受游客青睐，因为巴西的火车穿越风景秀丽的原野，老式的蒸气火车头
+
+令人怀旧。\n
+
+公路\n
+
+公路客货运输是巴西主要的运输方式。陆路客运主要为大型豪华巴士汽车，即便宜又舒适，但从治安、
+
+交通方面考虑，并不是十分安全。\n
+
+一般外国旅行者在巴西城市间的交通都采用航空旅行方式，即可缩短路途时间，又安全可靠。相近城市
+
+和城市内的旅游参观则都采用旅游公司安排的豪华带空调的中、大型巴士汽车作为交通工具，并有一定
+
+的标准和服务规范性。\n
+
+1、出租车：巴西国内的出租车为红色，十一点以后车费增加。\n
+
+2、市区公交车：由于巴西拥有私家车的人非常少，所以公共汽车就成了大多数人常用的交通工具。大城
+
+市有空调车往来于住宅区与商业区，路线从机场到各巴士站，途中经过许多大饭店。开车后售票员会来
+
+收钱，依路途远近，车费在75美分到1美元之间，各大旅馆会提供公共汽车路线的介绍。\n
+
+乘坐公交车贴士：巴西乘坐公交车一定要当心扒手乘机偷窃，他们常在公车行将开动时从后门跳出。没
+
+有位子坐的乘客一定要抓牢扶手，因为有些司机很不体贴，常常紧急刹车，转弯时也不减速。下车前请
+
+先拉铃，从前门下车。\n
+
+3、地铁：里约热内卢与圣保罗都有设备一流、四通八达的地下铁交通，车厢明净并有空调。外国观光客
+
+搭地下铁旅游不必担心迷路，各车站以及每个车厢内都备有行车路线图，使游客可以不必开口讲葡萄牙
+
+语而能来去自如。地下铁交通网是从市中心呈辐射状的向外四散，终点站则以公车线连接，通常一张车
+
+票可同时搭乘地下铁和公车。\n
+
+4、租车\n
+
+在巴西租车的租金不低，车辆右侧行驶，而且在市区很难停车。\n"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16.0sp" />
+
+            <com.newqm.sdkoffer.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

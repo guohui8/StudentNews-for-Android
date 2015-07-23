@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/header_bg" >
+
+    <ImageView
+            android:id="@+id/top_id_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7.0dip"
+            android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/top_main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12.0dip"
+        android:layout_toRightOf="@id/top_id_image"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textAppearance="@style/main_title_style" />
+
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_fav"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/unstar_icon"
+            android:clickable="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffffff"
+            android:textSize="13.5sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0.0dip" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/news_head" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0dip"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bglayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/adcontainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+
+                <com.newqm.sdkoffer.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bgtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/newsTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:gravity="center"
+                    android:paddingLeft="3.0dip"
+                    android:paddingRight="3.0dip"
+                    android:textColor="@color/color_title"
+                    android:textSize="18.0sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/catid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/newsAddTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="center"
+                    android:paddingBottom="3.0dip"
+                    android:paddingLeft="3.0dip"
+                    android:text=""
+                    android:textColor="@color/color_thread_list_bar" />
+
+                <ImageView
+                    android:id="@+id/list_divider_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/articleBody"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="5.0dip" />
+
+            <TextView
+                android:id="@+id/adtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:clickable="true"
+                android:paddingLeft="14.0dip"
+                android:paddingRight="14.0dip"
+                android:textSize="11.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/imgloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190.0dip"
+        android:background="@drawable/bg_list" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10.0px"
+            android:indeterminateDrawable="@drawable/progressbg"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:text="数据正在加载中..."
+            android:textColor="@color/text_color" >
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/LinearBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombg" >
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sharebtn" />
+
+        <Button
+            android:id="@+id/sunBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/shareBtn"
+            android:layout_alignBottom="@+id/shareBtn"
+            android:layout_marginRight="46dp"
+            android:layout_toLeftOf="@+id/shareBtn"
+            android:background="@drawable/menu_sun" />
+
+        <Button
+            android:id="@+id/fontBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sunBtn"
+            android:layout_alignBottom="@+id/sunBtn"
+            android:layout_marginRight="52dp"
+            android:layout_toLeftOf="@+id/sunBtn"
+            android:background="@drawable/menu_fontsize" />
+
+        <Button
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fontBtn"
+            android:layout_alignBottom="@+id/fontBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/menu_chapter" />
+    </RelativeLayout>
+
+</RelativeLayout>

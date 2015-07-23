@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+     <include
+            android:id="@+id/title_bar"
+            layout="@layout/newhead" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:minHeight="?android:listPreferredItemHeight"
+            android:orientation="vertical"
+            android:paddingBottom="3.0dip"
+            android:paddingTop="3.0dip" >
+
+            <TextView
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip"
+                android:text=" 饮食结构巴西因为是欧、亚、非移民荟萃之地，饮食习惯深受移民国的影响，所以各地习惯不一，极具
+
+地方特点。巴西南部土地肥沃，牧场很多，烤肉就成为当地最常用的大菜；东北地区人们主食是木薯粉
+
+和黑豆；其它地区的主食是面、大米和豆类等；蔬菜的消费量以东南部和南部地区居多。知名菜肴饮品
+
+：1、豆子炖肉，这是全民大菜，是用豆子和肉烹煮而成。2、巴西烤肉为巴西国家的一品国菜，在巴西
+
+的每个地方烤肉是极为主流的风味菜。\n
+
+饮食结构\n
+
+巴西因为是欧、亚、非移民荟萃之地，饮食习惯深受移民国的影响，所以各地习惯不一，极具地方特点
+
+。巴西南部土地肥沃，牧场很多，烤肉就成为当地最常用的大菜；东北地区人们主食是木薯粉和黑豆；
+
+其它地区的主食是面、大米和豆类等；蔬菜的消费量以东南部和南部地区居多。\n
+
+知名菜肴饮品\n
+
+1、豆子炖肉，这是全民大菜，是用豆子和肉烹煮而成。\n
+
+2、巴西烤肉为巴西国家的一品国菜，在巴西的每个地方烤肉是极为主流的风味菜。由于巴西畜牧业较发
+
+达，所以食品中肉类较多。他们常食猪牛肉，一般较富有的人家牛肉吃得多些，反之则食猪肉多些。烤
+
+牛肉是巴西的著名风味菜肴，每逢家宴、外出野餐都少不了烤肉。\n
+
+巴西烤烧发源于巴西最南端的RioGrandedoSul州，相传当地以放牧为生的高卓人经常聚集在篝火旁烘烤
+
+大块的牛肉分而食之。这种烧烤方法传播开来成为巴西独特的美食。烤牛肉不加调料，只在牛肉表面撒
+
+点食盐以免丧失原质香味；炭火一烤表层油脂渗出，外面焦黄，里面鲜嫩，有一种特有的香味。\n
+
+巴西烧烤代表了十足的拉丁风情，不拘一格、活力四射。走进巴西阳光,你已经无法再次见证那种粗犷的
+
+风格及篝火边的原始风味。但你能享受到的除了原汁原味的巴西烧烤之外，就是浓浓的巴西风情——在
+
+一个装饰最具风土味的地方，墙上挂满了关于异国狂野风的壁画。一个又一个高大威猛的巴西侍应生不
+
+断地穿梭在你身边。他们高高举着长长的烤肉叉，大块大块的牛肉串在叉上。小伙子走到客人面前,你可
+
+以根据自己的喜好要一片三角肉，点一客里脊，再来点香肠。熟练的牛仔们手起刀落，你的盘子里不一
+
+会儿就装满了美食。然后你可以随着热情奔放的拉丁音乐,沉浸于异国风情中。一边品尝异域的饮食文化
+
+，一边回忆在绿茵场上让人热血沸腾的桑巴舞。\n
+
+3、坑炖羊肉也是一道脍炙人口的菜肴，近几年异军突起，其特有的烹制方式和乡村风味风靡全国。
+
+4、巴西人的社交活动里离不开酒，在炎热的夏日点一杯冰凉的啤酒解暑是非常的惬意的。巴西有“咖啡
+
+王国”之称，是世界上最大的咖啡消费国之一，也是世界三大咖啡产地之一。咖啡是大多数人喜欢的饮
+
+品，巴西人比较喜欢喝浓咖啡，饭后闲谈时喜欢喝一杯浓浓的、加方糖的黑咖啡，还有一些爱喝马黛茶
+
+。
+\n"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16.0sp" />
+
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

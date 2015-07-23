@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tabbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/cy_table_host_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/tab_home"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/list_footer_height"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/home_icon"
+                    style="@style/tab_icon_button"
+                    android:src="@drawable/cy_icon_tabbar_main_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_at"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/list_footer_height"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/at_icon"
+                    style="@style/tab_icon_button"
+                    android:src="@drawable/cy_icon_tabbar_at_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_msg"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/list_footer_height"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/msg_icon"
+                    style="@style/tab_icon_button"
+                    android:src="@drawable/cy_icon_tabbar_message_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_hall"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/list_footer_height"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    style="@style/tab_icon_button"
+                    android:src="@drawable/cy_icon_tabbar_search_selector" />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:id="@+id/tab_jilu"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/list_footer_height"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/history_icon"
+                    style="@style/tab_icon_button"
+                    android:src="@drawable/cy_icon_tabbar_history_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/tabbar" />
+    </RelativeLayout>
+
+</TabHost>

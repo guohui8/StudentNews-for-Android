@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/head" />
+
+    <ScrollView
+        xmlns:zy="http://schemas.android.com/apk/res/com.guohui.student"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.guohui.widget.ZYTableView
+                style="@style/ZYTableView"
+                android:layout_marginTop="10.0dip" >
+
+                
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:title="关于世界杯" />
+                
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_jianjie"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:title="巴西简介" />
+
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_jiaotong"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:title="交通介绍" />
+
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_shop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:title="购物攻略" />
+
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_food"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:title="巴西美食" />
+
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_tour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:title="旅游简介" />
+            </com.guohui.widget.ZYTableView>
+
+            <com.guohui.widget.ZYTableView style="@style/ZYTableView" >
+
+                 <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_push"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:count="已是最新版本"
+                    zy:title="检测更新" />
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_show_tuisong"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:checked="check"
+                    zy:title="是否启用推送服务" />
+
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_clear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:count=""
+                    zy:title="清除缓存" />
+
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_fuwu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:title="购买程序" />
+
+                <com.guohui.widget.ZYBasicItem
+                    android:id="@+id/more_share"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zy:clickable="true"
+                    zy:title="告诉朋友" />
+            </com.guohui.widget.ZYTableView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

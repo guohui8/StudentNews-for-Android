@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+     <include
+            android:id="@+id/title_bar"
+            layout="@layout/newhead" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:minHeight="?android:listPreferredItemHeight"
+            android:orientation="vertical"
+            android:paddingBottom="3.0dip"
+            android:paddingTop="3.0dip" >
+
+            <TextView
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip"
+                android:text="    宝石凡到巴西的游客大多无法抗拒宝石的诱感。巴西宝石种类繁多，有紫水晶、蛋白石、黄玉、钻石、
+
+翡翠、红宝石、蓝宝石等，全球65％的彩色宝石产于巴西。今天的巴西是世界上首屈一指的珠宝中心，
+
+由于这些宝石从开采到切割、镶工、设计全部都在巴西进行，因此价格低廉，颇具吸引力。皮具巴西另
+
+一个值得买的东西是皮具，像皮鞋、拖鞋、皮包、皮夹等。有些最上等的皮具来自巴西南部，街头的手
+
+工艺集市也可以买到手工皮革制品。\n
+
+宝石\n
+
+凡到巴西的游客大多无法抗拒宝石的诱感。巴西宝石种类繁多，有紫水晶、蛋白石、黄玉、钻石、翡翠
+
+、红宝石、蓝宝石等，全球65％的彩色宝石产于巴西。\n
+
+今天的巴西是世界上首屈一指的珠宝中心，由于这些宝石从开采到切割、镶工、设计全部都在巴西进行
+
+，因此价格低廉，颇具吸引力。\n
+
+皮具\n
+
+巴西另一个值得买的东西是皮具，像皮鞋、拖鞋、皮包、皮夹等。有些最上等的皮具来自巴西南部，街
+
+头的手工艺集市也可以买到手工皮革制品。\n
+
+工艺品\n
+
+手工艺品有产自巴西东北部的陶器、手工蕾丝和刺绣，极富诱惑的印第安手工艺品多半来自亚马孙北部
+
+。全国到处都有的美丽的木器、草编饰物等售卖。\n
+
+咖啡\n
+
+千万不要忘记巴西有名的咖啡，买几瓶回去送人一定会大受欢迎。超市和面包店都有出售烘焙和磨细了
+
+的咖啡，真空包装的产品可以长保新鲜，或者也可以在机场购买好拿的纸袋咖啡。\n"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16.0sp" />
+
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

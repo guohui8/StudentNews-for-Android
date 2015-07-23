@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head" />
+
+    <FrameLayout
+        android:id="@+id/column_navi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/channel_bg" >
+
+        <HorizontalScrollView
+            android:id="@+id/column_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fadingEdge="vertical"
+            android:paddingLeft="9.0dip"
+            android:paddingRight="9.0dip"
+            android:scrollbars="none" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/column_slide_bar"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/channel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:weightSum="6.0" >
+
+                    <TextView
+                        android:id="@+id/tu1Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/main_title1"
+                        android:textAppearance="@style/column_item_style" />
+
+                    <TextView
+                        android:id="@+id/tu2Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/main_title2"
+                        android:textAppearance="@style/column_item_style" />
+
+                  
+                    <TextView
+                        android:id="@+id/tu3Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/main_title3"
+                        android:textAppearance="@style/column_item_style" />
+                    
+                    <TextView
+                        android:id="@+id/tu4Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/main_title4"
+                        android:textAppearance="@style/column_item_style" />
+                    
+                </LinearLayout>
+            </FrameLayout>
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/column_to_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="1.0dip"
+            android:visibility="gone" 
+            android:background="@color/color_transluent"
+            android:src="@drawable/arr_left" />
+
+        <ImageButton
+            android:id="@+id/column_to_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="2.0dip"
+            android:visibility="gone" 
+            android:background="@color/color_transluent"
+            android:src="@drawable/arr_right" />
+    </FrameLayout>
+
+    <com.guohui.widget.PullToRefreshListView
+        android:id="@+id/list_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider_line"
+        android:fadingEdge="none"
+        android:scrollingCache="false" >
+    </com.guohui.widget.PullToRefreshListView>
+
+
+</LinearLayout>

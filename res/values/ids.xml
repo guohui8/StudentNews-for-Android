@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="itemTitle" />
+    <item type="id" name="itemSubTitle" />
+    <item type="id" name="itemInput" />
+    <item type="id" name="itemCount" />
+    <item type="id" name="itemCheckBox" />
+    <item type="id" name="itemArrow" />
+    <item type="id" name="MainBox">false</item>
+</resources>

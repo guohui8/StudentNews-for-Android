@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+     <include
+            android:id="@+id/title_bar"
+            layout="@layout/newhead" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:minHeight="?android:listPreferredItemHeight"
+            android:orientation="vertical"
+            android:paddingBottom="3.0dip"
+            android:paddingTop="3.0dip" >
+
+            <TextView
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip"
+                android:text="    2014年巴西世界杯（英语：2014 FIFA World Cup）是第20届世界杯足球赛。比赛于2014年6月12日至7月13日在南美洲国家巴西境内12座城市中的12座球场内举行。\n
+[1] 这是继1950年巴西世界杯之后世界杯第二次在巴西举行，也是继1978年阿根廷世界杯之后世界杯第五次在南美洲举行。\n
+[2]巴西世界杯共有32支球队参赛。除去东道主巴西自动获得参赛资格以外，其他31个国家需通过参加2011年6月开始的预选赛获得参赛资格。\n
+[3]巴西世界杯期间，总共在巴西境内举办共计64场比赛角逐出冠军。\n
+[4]同时，巴西世界杯是首届运用门线技术的世界杯。\n"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16.0sp" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                layout="@layout/list_divider" />
+
+            <TextView
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:padding="10.0dip"
+                android:text="QQ:\n254738802"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16.0sp" />
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                layout="@layout/list_divider" />
+
+            <TextView
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:padding="10.0dip"
+                android:text="网站：\nwww.guohui1999.com"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16.0sp" />
+
+           
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                layout="@layout/list_divider" />
+           
+
+            <TextView
+                android:id="@android:id/text1"
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="软件版本：1.0"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

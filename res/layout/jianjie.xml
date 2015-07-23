@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+     <include
+            android:id="@+id/title_bar"
+            layout="@layout/newhead" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:minHeight="?android:listPreferredItemHeight"
+            android:orientation="vertical"
+            android:paddingBottom="3.0dip"
+            android:paddingTop="3.0dip" >
+
+            <TextView
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip"
+                android:text="      巴西是巴西联邦共和国的简称，它是拉丁美洲最大的国家，人口位居世界第五；国土面积851.49万平方
+
+公里，占南美洲总面积的46%，为世界第五大国。\n
+
+   巴西与乌拉圭、阿根廷、巴拉圭、玻利维亚、秘鲁、哥伦比亚、委内瑞拉、圭亚那、苏里南、法属圭亚
+
+那等国家和地区接壤，该国拥有辽阔的农田和广袤的雨林。巴西高原和亚马逊平原构成了巴西最主要的
+
+部分，而世界第一大河亚马逊河也流经该国。\n
+
+    巴西的国名，源于巴西红木；首都巴西利亚处在西三区，比北京时间晚11个小时。得益于丰厚的自然资
+
+源和充足的劳动力，巴西的国内生产总值位居南美洲第一，世界第七。由于历史上曾经为葡萄牙的殖民
+
+地，巴西的官方语言为葡萄牙语。巴西也是金砖国家之一。\n
+
+    足球是巴西人民最为热爱的运动项目，该国国家队曾经五夺世界杯冠军。2013年联合会杯、2014年世界
+
+杯足球赛都将在巴西举行；此外，巴西城市里约热内卢，还是2016年夏季奥林匹克运动会举办城市。\n"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16.0sp" />
+
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

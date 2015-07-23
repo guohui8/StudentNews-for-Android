@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_footer_height">42.0dip</dimen>
+    <dimen name="list_header_height">45.0dip</dimen>
+    <dimen name="text_size_19">19.0dip</dimen>
+    <dimen name="base_list_title_text_size">16.0sp</dimen>
+     <dimen name="bottom_tab_font_size">12.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">10.0dip</dimen>
+    <dimen name="bottom_tab_padding_bottom">10.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="base_listitem_padding_left_right">10.0dip</dimen>
+    <dimen name="base_listitem_padding_top_bottom">5.0dip</dimen>
+    <dimen name="base_list_desc_text_size">13.0sp</dimen>
+    <dimen name="base_listitem_img_width">73.0dip</dimen>
+    <dimen name="base_listitem_img_height">53.0dip</dimen>
+</resources>

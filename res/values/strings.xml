@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">世界杯2014</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+ <string name="versionnum">版本：Version 1.10</string>
+    <string name="menu_settings">Settings</string>
+    <string name="load_ing">数据加载中</string>
+    <string name="No_morenews">暂无更多数据</string>
+    <string name="Net_Failure">网络连接失败</string>
+    <string name="base_again_exit">再按一次退出程序</string>
+    <string name="menu_about">文章记录</string>
+    <string name="menu_setting">图片记录</string>
+    
+    
+    <string name="menu_exit">退出</string>
+    <string name="menu_index">返回</string>
+    <string name="setting_su">设置成功</string>
+    <string name="notice">温馨提示</string>
+    <string name="share">分享</string>
+    <string name="favroite">我要收藏</string>
+    <string name="setbizhi">设为壁纸</string>
+    <string name="add_fav">收藏成功</string>
+    <string name="cancel_fav">取消收藏</string>
+    <string name="adddel_message">你真的要删除该信息吗!</string>
+    <string name="delete_news">删除记录</string>
+    <string name="history_empty">暂无浏览历史记录</string>
+    <string name="main_title1">诸强球衣</string>
+    <string name="main_title2">球员风采</string>
+    <string name="main_title3">精彩瞬间</string>
+    <string name="main_title4">足球宝贝</string>
+    <string name="news_title1">世界杯新闻</string>
+    <string name="news_title2">周边花絮</string>
+    <string name="news_title3">历届世界杯</string>
+    <string name="news_title4">体坛周报</string>
+     <string name="mysee">我看过的</string>
+     <string name="str_back">返回</string>
+     <string name="searchhint">请输入关键字</string>
+      <string name="nokeys">请输入要搜索的关键字</string>
+    <string name="ptr_refreshing">正在刷新中</string>
+    <string name="ptr_last_updated">Updated: %1$s</string> 
+    <string name="copyright">Copyright © 2012 − 2018</string>
+    <string name="copyright2"> All Rights Reserved</string>
+</resources>

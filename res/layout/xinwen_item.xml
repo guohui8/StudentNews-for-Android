@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/base_listitem_padding_left_right"
+    android:paddingRight="@dimen/base_listitem_padding_left_right"
+    android:paddingTop="@dimen/base_listitem_padding_top_bottom" >
+
+    <TextView
+        android:id="@+id/tx_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginTop="-2.0dip"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingBottom="3.0dip"
+        android:singleLine="true"
+        android:text="标题"
+        android:textAppearance="@style/biz_special_item_title" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/icon"
+        android:lineSpacingExtra="2.0dip"
+        android:lines="2"
+        android:text="简介"
+        android:textAppearance="@style/base_list_desc_style" />
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/desc"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="2.0dip"
+        android:paddingRight="2.0dip"
+        android:singleLine="true"
+        android:text="时间"
+        android:textAppearance="@style/base_list_desc_style" />
+
+</RelativeLayout>
